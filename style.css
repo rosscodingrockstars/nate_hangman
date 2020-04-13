@@ -1,0 +1,58 @@
+body {
+    background-color: #123883
+  }
+  h1 {
+    color: #4ECDC4;
+     font-size: 45px;
+    text-align: center;
+  }
+  h2 {
+    color: #A7E2E3;
+    font-size: 34.9px;
+    text-align: center;
+  }
+  h1, h2 {
+  font-family: 'Baloo Da 2', cursive;
+  
+  }
+  p {
+    font-family: 'Roboto', sans-serif;
+    color: #4ECDC3
+  }
+  
+  .word-box{
+    border: 4px solid darkgrey;
+    width: 450px;
+    height: 145px;
+    margin: 0 auto;
+  }
+  
+  .guesses {
+    border: 3px solid darkgrey;
+    margin-top: 30px;
+    padding: 10px;
+  }
+  
+  .wins-losses{
+     border: 3.4px solid darkgrey;
+    margin-top: 30px;
+    padding: 8px;
+    width: 1010px;
+    height: 80px;
+  }
+  #chosen-food {
+    font-size: 34px;
+    text-align: center;
+  }
+  #play-again {
+    font-family:'Baloo Da 2', cursive;
+    font-size: 43px;
+    display: block;
+      margin: 0 auto;
+      margin-bottom: 5px;
+    margin-top: 30px;
+  }
+  #play-again:hover {
+    font-size: 45px;
+  cursor: pointer;
+    }

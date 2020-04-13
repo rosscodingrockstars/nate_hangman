@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Da+2|Roboto&display=swap" rel="stylesheet">
+  <title>Favorite Food Hangman</title>
+</head>
+<body>
+  <h1>Favorite Food Hangman</h1>
+  <h2>Press any letter key to guess the food!</h2>
+  <div class ="word-box">
+    <p id="chosen-food"></p>
+  </div>
+  <div class ="wins-losses">
+    <p>Wins: <span id="wins"></span></p>
+    <p>Losses: <span id="losses"></span></p>
+  </div>
+ <button id="play-again" onclick="startGame()">Play again</button>
+  <div class ="guesses">
+    <p>Guesses left: <span id="guesses-left"></span></p>
+    <p>Letters you have guessed:<span id="letters-guessed"></span></p>
+  </div>
+</body>
+</html>
