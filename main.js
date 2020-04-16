@@ -25,8 +25,12 @@ let selectedWord = "";
 const displayWord = document.getElementById("chosen-food");
 let underscores = [];
 const playButton = document.getElementById("play-again");
+const winSound = newAudio("sounds/win sound 1.zip");
+//const loseSound = newAudio(" ");
 
 function startGame() {
+    winSound.pause();
+    //loseSound.pause();
   
   selectedWord = "";
   underscores = [];
@@ -53,11 +57,13 @@ startGame();
 function didYouWin() {
   if (letterCounter === selectedWord.length && guessesLeft >= 0) {
     wins++;
+    winSound.play();
     winDisplay.innerHTML = wins;
     playButton.style.display = "block";
   } else {
     if (letterCounter !== selectedWord.length && guessesLeft <= 1) {
       losses++;
+      // loseSound.play();
       lossesDisplay.innerHTML = losses;
       playButton.style.display = "block";
     }
