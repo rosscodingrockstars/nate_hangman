@@ -25,12 +25,12 @@ let selectedWord = "";
 const displayWord = document.getElementById("chosen-food");
 let underscores = [];
 const playButton = document.getElementById("play-again");
-const winSound = newAudio("sounds/win sound 1.wav");
+const winSound = new Audio("sounds/win sound 1.wav");
 //const loseSound = newAudio(" ");
 
 function startGame() {
-    winSound.pause();
-    //loseSound.pause();
+  winSound.pause();
+  //loseSound.pause();
   
   selectedWord = "";
   underscores = [];
@@ -42,9 +42,9 @@ function startGame() {
   selectedWord = wordBank[Math.floor(Math.random() * wordBank.length)];
   for (let i = 0; i < selectedWord.length; i++) { 
     if (selectedWord[i] === "-" ) {
-    underscores[i] = "-";
-  } else {
-    underscores [i] = "_"
+      underscores[i] = "-";
+    } else {
+      underscores [i] = "_"
     }
   }
   displayWord.innerHTML = underscores.join(" ");
